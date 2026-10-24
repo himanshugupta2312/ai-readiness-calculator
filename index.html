@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Readiness Calculator</title>
+    <link rel="stylesheet" href="styles.css?v=4" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-left"></div>
+      <div class="ambient ambient-right"></div>
+
+      <main class="hero">
+        <p class="eyebrow">HER IDEA</p>
+
+        <h1>
+          <span class="headline-prefix">An</span>
+          <span class="headline-accent">AI</span>
+          <span class="headline-rest">Readiness Calculator.</span>
+        </h1>
+
+        <p class="subhead">A tool that:</p>
+
+        <div class="feature-list">
+          <article class="feature-item">
+            <svg class="checkmark" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="m4 12 5 5L20 6" />
+            </svg>
+            <h2><strong>Measures</strong> an employee's AI readiness</h2>
+          </article>
+
+          <article class="feature-item">
+            <svg class="checkmark" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="m4 12 5 5L20 6" />
+            </svg>
+            <h2><strong>Highlights</strong> strengths and areas to develop</h2>
+          </article>
+
+          <article class="feature-item">
+            <svg class="checkmark" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="m4 12 5 5L20 6" />
+            </svg>
+            <h2><strong>Recommends</strong> what they should improve next</h2>
+          </article>
+        </div>
+
+        <a class="primary-button" href="#assessment">Start your assessment <span aria-hidden="true">→</span></a>
+        <p class="hero-note">A quick, private self-assessment. No account required.</p>
+      </main>
+
+      <section class="assessment-section" id="assessment" aria-labelledby="assessment-title">
+        <div class="section-heading">
+          <p class="eyebrow">YOUR CHECK-IN</p>
+          <h2 id="assessment-title">How ready are you to work with AI?</h2>
+          <p>Rate each statement based on your current day-to-day practice. This takes about two minutes.</p>
+        </div>
+
+        <form id="assessment-form">
+          <div class="assessment-progress" aria-live="polite">
+            <span id="progress-label">0 of 6 answered</span>
+            <div class="progress-track" role="progressbar" aria-label="Assessment progress" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0">
+              <span class="progress-fill"></span>
+            </div>
+          </div>
+
+          <fieldset class="question">
+            <legend><span class="question-number">01</span><span>I understand where AI tools are useful—and where they are not.</span></legend>
+            <div class="rating-options" role="radiogroup" aria-label="Understanding AI capabilities">
+              <label><input type="radio" name="capabilities" value="1" required><span>1</span></label>
+              <label><input type="radio" name="capabilities" value="2"><span>2</span></label>
+              <label><input type="radio" name="capabilities" value="3"><span>3</span></label>
+              <label><input type="radio" name="capabilities" value="4"><span>4</span></label>
+              <label><input type="radio" name="capabilities" value="5"><span>5</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="question">
+            <legend><span class="question-number">02</span><span>I can give an AI tool clear instructions and useful context.</span></legend>
+            <div class="rating-options" role="radiogroup" aria-label="Writing effective prompts">
+              <label><input type="radio" name="prompting" value="1" required><span>1</span></label>
+              <label><input type="radio" name="prompting" value="2"><span>2</span></label>
+              <label><input type="radio" name="prompting" value="3"><span>3</span></label>
+              <label><input type="radio" name="prompting" value="4"><span>4</span></label>
+              <label><input type="radio" name="prompting" value="5"><span>5</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="question">
+            <legend><span class="question-number">03</span><span>I use AI regularly to help with appropriate work tasks.</span></legend>
+            <div class="rating-options" role="radiogroup" aria-label="Applying AI to work">
+              <label><input type="radio" name="application" value="1" required><span>1</span></label>
+              <label><input type="radio" name="application" value="2"><span>2</span></label>
+              <label><input type="radio" name="application" value="3"><span>3</span></label>
+              <label><input type="radio" name="application" value="4"><span>4</span></label>
+              <label><input type="radio" name="application" value="5"><span>5</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="question">
+            <legend><span class="question-number">04</span><span>I check AI-generated information before relying on or sharing it.</span></legend>
+            <div class="rating-options" role="radiogroup" aria-label="Checking AI outputs">
+              <label><input type="radio" name="verification" value="1" required><span>1</span></label>
+              <label><input type="radio" name="verification" value="2"><span>2</span></label>
+              <label><input type="radio" name="verification" value="3"><span>3</span></label>
+              <label><input type="radio" name="verification" value="4"><span>4</span></label>
+              <label><input type="radio" name="verification" value="5"><span>5</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="question">
+            <legend><span class="question-number">05</span><span>I know what sensitive or confidential information must stay out of AI tools.</span></legend>
+            <div class="rating-options" role="radiogroup" aria-label="Using AI safely">
+              <label><input type="radio" name="safety" value="1" required><span>1</span></label>
+              <label><input type="radio" name="safety" value="2"><span>2</span></label>
+              <label><input type="radio" name="safety" value="3"><span>3</span></label>
+              <label><input type="radio" name="safety" value="4"><span>4</span></label>
+              <label><input type="radio" name="safety" value="5"><span>5</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="question">
+            <legend><span class="question-number">06</span><span>I can identify a work process that could improve with thoughtful AI use.</span></legend>
+            <div class="rating-options" role="radiogroup" aria-label="Finding opportunities to improve work">
+              <label><input type="radio" name="workflow" value="1" required><span>1</span></label>
+              <label><input type="radio" name="workflow" value="2"><span>2</span></label>
+              <label><input type="radio" name="workflow" value="3"><span>3</span></label>
+              <label><input type="radio" name="workflow" value="4"><span>4</span></label>
+              <label><input type="radio" name="workflow" value="5"><span>5</span></label>
+            </div>
+          </fieldset>
+
+          <div class="scale-hint"><span>1 — Not yet</span><span>5 — Consistently</span></div>
+          <button class="primary-button submit-button" type="submit">See my results <span aria-hidden="true">→</span></button>
+        </form>
+
+        <section class="results-panel" id="results" aria-labelledby="results-title" tabindex="-1" hidden>
+          <p class="eyebrow">YOUR RESULTS</p>
+          <div class="score-row">
+            <div class="score-value"><span id="score">0</span><span class="score-percent">%</span></div>
+            <div>
+              <h2 id="results-title">Your readiness snapshot</h2>
+              <p id="score-summary"></p>
+            </div>
+          </div>
+          <div class="result-meter" aria-hidden="true"><span id="result-meter-fill"></span></div>
+          <h3>Your next steps</h3>
+          <ul id="recommendations"></ul>
+          <p class="benchmark-note">This is an indicative self-assessment based on your responses, not a validated assessment or comparison against a global workforce benchmark.</p>
+          <button class="secondary-button" id="retake-button" type="button">Retake assessment</button>
+        </section>
+      </section>
+    </div>
+    <script src="app.js?v=1"></script>
+  </body>
+</html>
